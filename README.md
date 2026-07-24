@@ -16,6 +16,7 @@ Tài liệu bài giảng **AI Vietnam** — Phân khúc khách hàng nâng cao s
 | 3 | Feature Engineering (20 → 14 features) | [`02_feature_engineering.ipynb`](notebooks/02_feature_engineering.ipynb) |
 | 4 | Two-Stage Clustering (K-Means++) | [`03_modeling.ipynb`](notebooks/03_modeling.ipynb) |
 | 5 | SHAP Explainability — Mở hộp đen | [`04_shap_analysis.ipynb`](notebooks/04_shap_analysis.ipynb) |
+| 6 | Hồ sơ cụm & Chiến lược (giá trị thô) | [`05_cluster_profiling.ipynb`](notebooks/05_cluster_profiling.ipynb) |
 
 ---
 
@@ -59,6 +60,7 @@ Chạy theo thứ tự — mỗi notebook lưu output cho notebook tiếp theo:
 02_feature_engineering.ipynb   →  data/processed/customer_features_*_scaled.csv
 03_modeling.ipynb              →  data/processed/cluster_assignments_retail_k4.csv
 04_shap_analysis.ipynb         →  figures/04_shap/
+05_cluster_profiling.ipynb     →  data/processed/cluster_customer_profiles.csv + cluster_strategy_summary.csv
 ```
 
 ---
@@ -86,7 +88,7 @@ Chạy theo thứ tự — mỗi notebook lưu output cho notebook tiếp theo:
 
 ```
 advanced_customer_segmentation/
-├── notebooks/              # 4 lecture notebooks (01 → 04)
+├── notebooks/              # 5 lecture notebooks (01 → 05)
 ├── src/
 │   ├── clustering_library/ # DataCleaner, FeatureEngineer, ClusterAnalyzer, DataVisualizer
 │   ├── notebook_io.py      # Tiện ích đọc/ghi path
